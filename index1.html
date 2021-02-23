@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<title>A site</title>
+<script>
+var x = 0;
+var y = 1;
+var z = 100;
+function clicked() {
+    x = x + 1;
+    document.getelementbyId("count").innerHTML = x;
+}
+function upgrade1() {
+    if (x >= z) {
+        x = x - z
+        z = z * 2;
+        y = y + 1
+    }
+}
+</script>
+<body>
+<button id="click" onclick="">Click Here</button>
+<p id="count"></p>
+<button id="upgrade">Upgrade(costs  clicks)</button>
+</body>
+<style>
+
+</style>
+</html>
